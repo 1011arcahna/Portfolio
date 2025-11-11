@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Archana Verma — Front-End Developer & Data Analyst</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#94a3b8;
+  --accent:#3b82f6;
+  --glass: rgba(255,255,255,0.04);
+  --radius:16px;
+  --max-width:1100px;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: 'Montserrat',system-ui;
+  background: linear-gradient(180deg,var(--bg),#071025 120%);
+  color:#e6eef8;
+  line-height:1.45;
+  padding:48px 24px;
+  display:flex;justify-content:center;
+}
+.wrap{width:100%;max-width:var(--max-width);}
+header{
+  display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;
+}
+.brand{display:flex;gap:14px;align-items:center}
+.brand h1{margin:0;font-size:20px}
+nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+nav a:hover{color:var(--accent)}
+
+main{display:grid;grid-template-columns:350px 1fr;gap:28px}
+
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:var(--radius);backdrop-filter:blur(6px);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section-title{font-size:13px;color:var(--muted);letter-spacing:1px;margin:12px 0}
+.contact{font-size:14px;color:#cfe6ff}
+.contact a{color:var(--muted);text-decoration:none}
+.skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chip{background:var(--glass);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+
+.hero{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.008));padding:28px;border-radius:var(--radius)}
+.hero h2{margin:0;font-size:28px}
+.hero p.lead{color:var(--muted);margin-top:8px}
+
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.project{padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(59,130,246,0.06), transparent);border:1px solid rgba(59,130,246,0.06)}
+.project h4{margin:0 0 6px 0}
+.meta{font-size:13px;color:var(--muted)}
+
+footer{margin-top:22px;color:var(--muted);font-size:13px}
+
+@media (max-width:900px){
+  main{grid-template-columns:1fr;}
+  .hero h2{font-size:22px}
+  .grid{grid-template-columns:1fr}
+}
+
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#60a5fa);color:#021028;font-weight:700;text-decoration:none}
+.muted{color:var(--muted)}
+.mb8{margin-bottom:8px}
+
+[data-reveal]{opacity:0;transform:translateY(12px);transition:all .6s cubic-bezier(.16,.84,.49,1)}
+[data-reveal].is-revealed{opacity:1;transform:none}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+<header>
+  <div class="brand">
+    <div>
+      <h1>Archana Verma</h1>
+      <div class="muted">Front-End Developer · Data Analytics Enthusiast</div>
+    </div>
+  </div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<aside>
+  <div class="card" data-reveal>
+    <div class="profile-photo">
+      <img src="image.jpg" alt="Archana Verma Profile Image">
+    </div>
+
+    <div class="section-title">Contact</div>
+    <div class="contact">
+      <div>Moradabad, India</div>
+      <div>Phone: 7983553356</div>
+      <div>Email: <a href="mailto:archanaverma10@gmail.com">archanaverma10@gmail.com</a></div>
+      <div>LinkedIn: <a href="https://www.linkedin.com/in/archana-verma-a066a0305" target="_blank">archana-verma</a></div>
+
+      <div style="margin-top:10px">
+        <a class="btn" href="Archana_Verma_Resume.pdf" download>Download Resume</a>
+      </div>
+    </div>
+
+    <div class="section-title">Skills</div>
+    <div class="skills">
+      <div class="chip">HTML</div><div class="chip">CSS</div><div class="chip">JavaScript</div>
+      <div class="chip">Python</div><div class="chip">MySQL</div><div class="chip">Node.js</div>
+      <div class="chip">GitHub</div><div class="chip">Excel</div>
+    </div>
+
+    <div class="section-title">Certifications</div>
+    <div class="muted">
+      Cybersecurity (ICT Academy × Honeywell)<br>
+      AI for Beginners (HP LIFE)<br>
+      Data Analytics Virtual Internship (Deloitte)<br>
+      Research Methodology & Statistical Analysis (SWAYAM)<br>
+      Advanced Database Concepts (MS SQL Server)
+    </div>
+  </div>
+</aside>
+
+<section>
+  <div class="hero card" id="about" data-reveal>
+    <h2>Hello, I am Archana — Front-End Developer & Data Analytics Enthusiast</h2>
+    <p class="lead muted">MCA (AI & DS) student building responsive applications and data-driven solutions.</p>
+
+    <div style="margin-top:14px;display:flex;gap:12px;flex-wrap:wrap">
+      <a class="btn" href="#projects">View Projects</a>
+      <a class="btn" href="#contact">Contact Me</a>
+    </div>
+
+    <div class="grid" style="margin-top:18px">
+      <div class="project" data-reveal>
+        <h4>Disease Prediction System</h4>
+        <div class="meta">Python, Scikit-learn, Flask, Streamlit</div>
+        <p class="muted mb8">ML web app predicting diseases using health & lifestyle data, ~95% accuracy.</p>
+      </div>
+
+      <div class="project" data-reveal>
+        <h4>AI-Based Food Suggestion & Ordering</h4>
+        <div class="meta">HTML, CSS, JavaScript, Node.js</div>
+        <p class="muted mb8">Mood-based recommendation engine, admin panel, order history, responsive UI.</p>
+      </div>
+
+      <div class="project" data-reveal>
+        <h4>Quiz Master Web Application</h4>
+        <div class="meta">HTML, CSS, JavaScript, PHP, MySQL</div>
+        <p class="muted mb8">Leaderboard, secure login, scoring system, responsive design.</p>
+      </div>
+
+      <div class="project" style="grid-column:1 / -1" data-reveal>
+        <h4>Cloud & AI Internship</h4>
+        <div class="meta">Edunet × AICTE × IBM — 2025</div>
+        <p class="muted">Hands-on cloud deployment, AI workflows, IBM Cloud tools, practical exposure.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="skills" style="margin-top:18px" data-reveal>
+    <h3>Technical Summary</h3>
+    <div class="muted">
+      Programming: C, Python, JavaScript<br>
+      Front-End: HTML, CSS, JavaScript<br>
+      Database: MySQL<br>
+      Tools: VS Code, Git & GitHub<br>
+      Cloud: IBM Cloud Platform
+    </div>
+
+    <h3 style="margin-top:12px">Education</h3>
+    <div class="muted">
+      MCA (AI & DS) — Graphic Era Hill University (Pursuing)<br>
+      BCA — IFTM University (CGPA: 88.7%)<br>
+      12th — NIOS (62%)<br>
+      10th — Saint Mira Academy (70%)
+    </div>
+
+    <h3 style="margin-top:12px">Internship</h3>
+    <div class="muted">
+      Emerging Technologies (AI & Cloud) Intern — Edunet × AICTE × IBM (Jul-Aug 2025)<br>
+      Practical AI & Cloud assignments, IBM Cloud services, ML workflows, automation pipelines.
+    </div>
+
+    <h3 style="margin-top:12px">Workshops & Participation</h3>
+    <div class="muted">
+      Workshop on Patent, Research Paper & Journals — IEEE Student Branch, GEHU<br>
+      MindSprint – National Level Quiz Competition — CodeElevate Academy
+    </div>
+  </div>
+
+<div class="card" id="contact" style="margin-top:18px" data-reveal>
+  <h3>Get In Touch</h3>
+  <p class="muted mb8">Feel free to reach out to me for any questions or opportunities.</p>
+
+  <p><strong>Email:</strong> <a href="mailto:archanaverma10@gmail.com">archanaverma10@gmail.com</a></p>
+  <p><strong>Phone:</strong> 7983553356</p>
+  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/archana-verma-a066a0305" target="_blank">archana-verma-a066a0305</a></p>
+
+  <h4 style="margin-top:18px;">Send Me a Message</h4>
+  <form action="mailto:archanaverma10@gmail.com" method="post" enctype="text/plain" style="display:flex;flex-direction:column;gap:10px;margin-top:8px;">
+    <input type="text" name="name" placeholder="Your Name" style="padding:8px;border-radius:8px;border:none;background:rgba(255,255,255,0.05);color:#e6eef8;">
+    <input type="email" name="email" placeholder="Your Email" style="padding:8px;border-radius:8px;border:none;background:rgba(255,255,255,0.05);color:#e6eef8;">
+    <input type="text" name="subject" placeholder="Subject" style="padding:8px;border-radius:8px;border:none;background:rgba(255,255,255,0.05);color:#e6eef8;">
+    <textarea name="message" placeholder="Message" rows="5" style="padding:8px;border-radius:8px;border:none;background:rgba(255,255,255,0.05);color:#e6eef8;"></textarea>
+    <button type="submit" class="btn" style="margin-top:6px;">Send Message</button>
+  </form>
+
+  <footer style="margin-top:18px;">© <span id="year"></span> Archana Verma. All rights reserved.<br>
+  Transforming data into insights with precision, passion, and purpose.</footer>
+</div>
+
+</section>
+
+</main>
+</div>
+
+<script>
+const reveals = document.querySelectorAll('[data-reveal]');
+const isInViewport = el => {
+  const r = el.getBoundingClientRect();
+  return r.top <= (window.innerHeight || document.documentElement.clientHeight) - 60;
+}
+function checkReveal(){
+  reveals.forEach(r => { if(isInViewport(r)) r.classList.add('is-revealed'); });
+}
+window.addEventListener('scroll', checkReveal);
+window.addEventListener('load', () => {
+  checkReveal();
+  document.getElementById('year').textContent = new Date().getFullYear();
+});
+</script>
+
+</body>
+</html>
